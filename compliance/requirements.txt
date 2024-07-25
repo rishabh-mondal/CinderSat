@@ -3,6 +3,6 @@ pandas
 numpy
 scipy
 matplotlib
-geopandas==0.12.2
+geopandas==0.10.2
 itertools
 operator
