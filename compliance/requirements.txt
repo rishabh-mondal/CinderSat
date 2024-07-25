@@ -1,0 +1,8 @@
+streamlit==1.33.0
+pandas
+numpy
+scipy
+matplotlib
+geopandas
+itertools
+operator
