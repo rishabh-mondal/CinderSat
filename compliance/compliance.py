@@ -96,7 +96,7 @@ def ckdnearest_brick_kilns(brick_kilns):
          pd.Series(dist[:, 1], name='dist')], axis=1)
     return gdf
 # Load waterways shapefile
-waterways_path = 'compliance/data/waterways.shp'
+waterways_path = 'compliance/data/waterways/waterways.shp'
 waterways = gpd.read_file(waterways_path)
 
 # Load brick kilns data (this should be the path to your brick kilns CSV file)
