@@ -7,6 +7,8 @@ from scipy.spatial import cKDTree
 import geopy.distance
 import matplotlib.pyplot as plt
 from operator import itemgetter
+import os
+st.write("Current working directory:", os.getcwd())
 
 # Title of the app
 st.title("Automatic Compliance Monitoring for Brick Kilns")
@@ -20,7 +22,7 @@ state = st.selectbox("Select State", ["Punjab", "Haryana", "Bihar"])  # Update t
 distance_kilns = st.checkbox("Inter-brick kiln distance < 1km")
 distance_hospitals = st.checkbox("Distance to Hospitals < 800m")
 distance_water_bodies = st.checkbox("Distance to Water bodies < 500m")
-fp2 = "/home/shataxi.dubey/shataxi_work/India_State_Shapefile/India_State_Shapefile/India_State_Boundary.shp"
+fp2 = "data/India_State_Boundary.shp"
 
 
 
