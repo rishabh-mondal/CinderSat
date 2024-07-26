@@ -1,5 +1,4 @@
 folium
-gdowns
 treamlit==1.33.0
 pandas
 numpy
