@@ -127,7 +127,7 @@ if distance_water_bodies:
     brick_kilns['compliant'] &= bk_river_mapping['distance'] >= 0.5
 
 # Plotting the results
-fig, ax = plt.subplots(figsize=(10, 10))
+fig, ax = plt.subplots(figsize=(8, 6))
 # data2 = gpd.read_file(waterways_path)  # Replace this with the appropriate shapefile for the state map
 data2.plot(ax=ax, cmap='Pastel2', edgecolor='black', linewidth=0.1)  # State map
 waterways.plot(ax=ax, color='blue', linewidth=0.2)  # Water bodies

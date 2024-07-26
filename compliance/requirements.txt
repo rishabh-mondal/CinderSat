@@ -1,4 +1,6 @@
-streamlit==1.33.0
+folium
+gdowns
+treamlit==1.33.0
 pandas
 numpy
 scipy
