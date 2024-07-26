@@ -7,3 +7,4 @@ matplotlib
 geopandas==0.10.2
 itertools
 operator
+huggingface-hub
