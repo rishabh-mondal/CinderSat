@@ -119,7 +119,7 @@ bk_kiln_mapping = ckdnearest_brick_kilns(pd.read_csv(brick_kilns_path))
 
 brick_kilns['compliant'] = True
 if distance_kilns:
-    brick_kilns['compliant'] &= bk_kiln_mapping['dist'] >= 1
+    brick_kilns['compliant'] &= bk_kiln_mapping['dist'] >= 0.5
 if distance_hospitals:
     brick_kilns['compliant'] &= bk_hospital_mapping['distance_km'] >= 0.8
 if distance_water_bodies:
