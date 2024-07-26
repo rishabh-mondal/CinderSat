@@ -68,7 +68,7 @@ def cal_bk_hosp_dist(path, hospital_df):
     return bk_hospital_mapping
 
 # Load hospitals data
-hospital_df = pd.read_csv('/home/rishabh.mondal/bkdb/India_Hospital_Data.csv')
+hospital_df = pd.read_csv('compliance/data/India_Hospital_Data.csv')
 hospital_df = hospital_df.rename(columns = {'lon' : 'Longitude', 'lat' : 'Latitude'})
 
 # Function to calculate distances between brick kilns and nearest rivers
@@ -96,16 +96,16 @@ def ckdnearest_brick_kilns(brick_kilns):
          pd.Series(dist[:, 1], name='dist')], axis=1)
     return gdf
 # Load waterways shapefile
-waterways_path = '/home/shataxi.dubey/shataxi_work/compliance_analysis/waterways/waterways.shp'
+waterways_path = 'compliance/data/waterways.shp'
 waterways = gpd.read_file(waterways_path)
 
 # Load brick kilns data (this should be the path to your brick kilns CSV file)
-brick_kilns_path = '/home/patel_zeel/compass24/exact_latlon/haryana.csv'
+# brick_kilns_path = '/home/patel_zeel/compass24/exact_latlon/haryana.csv'
 brick_kilns_paths = {
-    "Punjab": '/home/patel_zeel/compass24/exact_latlon/punjab.csv',
-    "Haryana": '/home/patel_zeel/compass24/exact_latlon/haryana.csv',
+    "Punjab": 'compliance/data/punjab.csv',
+    "Haryana": 'compliance/data/haryana.csv',
     # "Uttar Pradesh": '/home/patel_zeel/kilns_neurips24/exact_latlon/uttar_pradesh.csv',  
-    "Bihar": '/home/patel_zeel/compass24/exact_latlon/bihar.csv',
+    "Bihar": 'compliance/data/bihar.csv',
 }
 
 # Load brick kilns data for the selected state
