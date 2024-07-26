@@ -1,10 +1,8 @@
 folium
-streamlit==1.33.0
+geopy
+geopandas
+streamlit
 pandas
 numpy
 scipy
 matplotlib
-geopandas==0.10.2
-itertools
-operator
-huggingface-hub
