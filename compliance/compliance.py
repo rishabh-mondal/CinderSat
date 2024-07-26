@@ -22,10 +22,7 @@ state = st.selectbox("Select State", ["Punjab", "Haryana", "Bihar"])  # Update t
 distance_kilns = st.checkbox("Inter-brick kiln distance < 1km")
 distance_hospitals = st.checkbox("Distance to Hospitals < 800m")
 distance_water_bodies = st.checkbox("Distance to Water bodies < 500m")
-fp2 = "data/India_State_Boundary.shp"
-
-
-
+fp2 = "/data/India_State_Boundary.shp"
 
 # Read file using gpd.read_file()
 data2 = gpd.read_file(fp2)
